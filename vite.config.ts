@@ -4,7 +4,7 @@ import react from '@vitejs/plugin-react';
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: '/', // This will be updated if you're using a repository name as subdirectory
+  base: '/prabansha-portfolio/', // This will be updated if you're using a repository name as subdirectory
   build: {
     outDir: 'dist',
     assetsDir: 'assets',
