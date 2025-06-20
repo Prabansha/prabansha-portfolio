@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
-import { skills } from '../data/portfolio';
+import { skills } from '../data/portfolio.tsx';
 
 const Skills: React.FC = () => {
   const [ref, inView] = useInView({
@@ -96,9 +96,13 @@ const Skills: React.FC = () => {
                   <motion.div
                     whileHover={{ scale: 1.2, rotate: 360 }}
                     transition={{ duration: 0.6 }}
-                    className="text-4xl mb-4 text-center"
+                    className="mb-4 flex justify-center items-center h-12"
                   >
-                    {skill.icon}
+                    <img
+                        src={`/icons/${skill.icon}`}
+                        alt={skill.name}
+                        className="h-10 w-10 object-contain"
+                    />
                   </motion.div>
 
                   {/* Skill Name */}

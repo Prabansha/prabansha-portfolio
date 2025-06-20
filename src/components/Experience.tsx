@@ -2,7 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import { Briefcase, GraduationCap, Award } from 'lucide-react';
-import { experiences } from '../data/portfolio';
+import { experiences } from '../data/portfolio.tsx';
 
 const Experience: React.FC = () => {
   const [ref, inView] = useInView({

@@ -1,3 +1,5 @@
+//import { SiReact } from 'react-icons/si';
+
 export interface Project {
   id: string;
   title: string;

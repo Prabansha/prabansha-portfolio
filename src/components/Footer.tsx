@@ -7,9 +7,9 @@ const Footer: React.FC = () => {
   
   const socialLinks = [
     { icon: Github, href: 'https://github.com/prabansha', label: 'GitHub' },
-    { icon: Linkedin, href: 'https://linkedin.com/in/prabansha', label: 'LinkedIn' },
+    { icon: Linkedin, href: 'www.linkedin.com/in/prabansha-dissanayake', label: 'LinkedIn' },
     { icon: Twitter, href: 'https://twitter.com/prabansha', label: 'Twitter' },
-    { icon: Mail, href: 'mailto:prabansha@example.com', label: 'Email' }
+    { icon: Mail, href: 'mailto:prabanshadisanayaka@gmail.com', label: 'Email' }
   ];
 
   const scrollToSection = (sectionId: string) => {
@@ -107,15 +107,15 @@ const Footer: React.FC = () => {
           >
             <h4 className="text-lg font-semibold mb-4 text-purple-400">Get In Touch</h4>
             <div className="space-y-3 text-gray-300">
-              <p>Colombo, Sri Lanka</p>
+              <p>Matara, Sri Lanka</p>
               <a
                 href="mailto:prabansha@example.com"
                 className="block hover:text-blue-400 transition-colors duration-300"
               >
-                prabansha@example.com
+                prabanshadisanayaka@gmail.com
               </a>
               <a
-                href="tel:+94771234567"
+                href="tel:+94717606330"
                 className="block hover:text-purple-400 transition-colors duration-300"
               >
                 +94 77 123 4567

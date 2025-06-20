@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import { Mail, Phone, MapPin, Send, Github, Linkedin, Twitter } from 'lucide-react';
+import emailjs from '@emailjs/browser';
 
 const Contact: React.FC = () => {
   const [ref, inView] = useInView({
@@ -21,6 +22,30 @@ const Contact: React.FC = () => {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
+
+    try {
+      const result = await emailjs.send(
+          'service_gukq5os',
+          'template_a71vsm6',
+          {
+            name: formData.name,
+            email: formData.email,
+            subject: formData.subject,
+            message: formData.message,
+            time: new Date().toLocaleString(), // optional
+          },
+          'ugoCTE2frbBRMd7l-'
+      );
+
+      console.log(result.text);
+      alert('Message sent successfully!');
+      setFormData({ name: '', email: '', subject: '', message: '' });
+    } catch (error) {
+      console.error('Failed to send message:', error);
+      alert('Failed to send message. Please try again later.');
+    } finally {
+      setIsSubmitting(false);
+    }
     
     // Simulate form submission
     await new Promise(resolve => setTimeout(resolve, 2000));
@@ -44,26 +69,26 @@ const Contact: React.FC = () => {
     {
       icon: Mail,
       label: 'Email',
-      value: 'prabansha@example.com',
-      href: 'mailto:prabansha@example.com'
+      value: 'prabanshadisanayaka@gmail.com',
+      href: 'mailto:prabanshadisanayaka@gmail.com'
     },
     {
       icon: Phone,
       label: 'Phone',
-      value: '+94 77 123 4567',
-      href: 'tel:+94771234567'
+      value: '+94 71 760 6330',
+      href: 'tel:+94717606330'
     },
     {
       icon: MapPin,
       label: 'Location',
-      value: 'Colombo, Sri Lanka',
-      href: 'https://maps.google.com/?q=Colombo,Sri Lanka'
+      value: 'Matara, Sri Lanka',
+      href: 'https://maps.google.com/?q=Matara,Sri Lanka'
     }
   ];
 
   const socialLinks = [
     { icon: Github, href: 'https://github.com/prabansha', label: 'GitHub' },
-    { icon: Linkedin, href: 'https://linkedin.com/in/prabansha', label: 'LinkedIn' },
+    { icon: Linkedin, href: 'www.linkedin.com/in/prabansha-dissanayake', label: 'LinkedIn' },
     { icon: Twitter, href: 'https://twitter.com/prabansha', label: 'Twitter' }
   ];
 

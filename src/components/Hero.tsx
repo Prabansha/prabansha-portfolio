@@ -194,8 +194,8 @@ const Hero: React.FC = () => {
           >
             {[
               { icon: Github, href: 'https://github.com/prabansha', label: 'GitHub' },
-              { icon: Linkedin, href: 'https://linkedin.com/in/prabansha', label: 'LinkedIn' },
-              { icon: Mail, href: 'mailto:prabansha@example.com', label: 'Email' }
+              { icon: Linkedin, href: 'www.linkedin.com/in/prabansha-dissanayake', label: 'LinkedIn' },
+              { icon: Mail, href: 'mailto:prabanshadisanayaka@gmail.com', label: 'Email' }
             ].map(({ icon: Icon, href, label }) => (
               <motion.a
                 key={label}
@@ -213,6 +213,7 @@ const Hero: React.FC = () => {
           </motion.div>
         </motion.div>
 
+        <br/><br/>
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}

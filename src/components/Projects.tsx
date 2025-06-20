@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import { ExternalLink, Github, Play } from 'lucide-react';
-import { projects } from '../data/portfolio';
+import { projects } from '../data/portfolio.tsx';
 
 const Projects: React.FC = () => {
   const [ref, inView] = useInView({
