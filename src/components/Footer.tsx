@@ -7,7 +7,7 @@ const Footer: React.FC = () => {
   
   const socialLinks = [
     { icon: Github, href: 'https://github.com/prabansha', label: 'GitHub' },
-    { icon: Linkedin, href: 'www.linkedin.com/in/prabansha-dissanayake', label: 'LinkedIn' },
+    { icon: Linkedin, href: 'https://www.linkedin.com/in/prabansha-dissanayake', label: 'LinkedIn' },
     { icon: Twitter, href: 'https://twitter.com/prabansha', label: 'Twitter' },
     { icon: Mail, href: 'mailto:prabanshadisanayaka@gmail.com', label: 'Email' }
   ];

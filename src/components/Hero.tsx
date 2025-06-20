@@ -89,14 +89,14 @@ const Hero: React.FC = () => {
     }
   };
 
-  const typewriterTexts = [
-    'React Developer',
-    'Spring Boot Expert',
-    'MySQL Specialist',
-    'Angular Developer',
-    'Problem Solver',
-    'Clean Code Advocate'
-  ];
+  // const typewriterTexts = [
+  //   'React Developer',
+  //   'Spring Boot Expert',
+  //   'MySQL Specialist',
+  //   'Angular Developer',
+  //   'Problem Solver',
+  //   'Clean Code Advocate'
+  // ];
 
   return (
     <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
@@ -148,7 +148,7 @@ const Hero: React.FC = () => {
                 animate={{ opacity: 1 }}
                 className="text-blue-600 dark:text-blue-400 font-semibold"
               >
-                React, Spring Boot, MySQL, Angular, Problem Solving, Innovation
+                React, Node Js, Spring Boot, MongoDB, Angular, Problem Solving, Innovation
               </motion.span>
             </span>
           </motion.div>
@@ -175,7 +175,7 @@ const Hero: React.FC = () => {
             </motion.button>
 
             <motion.a
-              href="/resume.pdf"
+              href="/Prabansha_Dissanayake-Intern_Software_Engineer.pdf"
               download
               whileHover={{ scale: 1.05, y: -2 }}
               whileTap={{ scale: 0.95 }}
@@ -194,7 +194,7 @@ const Hero: React.FC = () => {
           >
             {[
               { icon: Github, href: 'https://github.com/prabansha', label: 'GitHub' },
-              { icon: Linkedin, href: 'www.linkedin.com/in/prabansha-dissanayake', label: 'LinkedIn' },
+              { icon: Linkedin, href: 'https://www.linkedin.com/in/prabansha-dissanayake/', label: 'LinkedIn' },
               { icon: Mail, href: 'mailto:prabanshadisanayaka@gmail.com', label: 'Email' }
             ].map(({ icon: Icon, href, label }) => (
               <motion.a
